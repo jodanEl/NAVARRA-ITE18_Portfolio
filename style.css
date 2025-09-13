@@ -16,7 +16,7 @@ body{
     height: 100vh;
     background-image: url('background.png');
     background-size: auto;
-    background-position: right bottom;
+    background-position: right center;
 }
 .container{
     padding: 10px 10%;
@@ -339,6 +339,7 @@ body.light-mode form textarea {
 #edit-btn:hover {
     background: #0f6fa8;
 }
+
 
 
 
