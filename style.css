@@ -14,9 +14,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('background.png');
+    background-size: auto;
+    background-position: right bottom;
 }
 .container{
     padding: 10px 10%;
@@ -339,6 +339,7 @@ body.light-mode form textarea {
 #edit-btn:hover {
     background: #0f6fa8;
 }
+
 
 
 
