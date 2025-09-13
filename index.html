@@ -161,9 +161,9 @@
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
             if (document.body.classList.contains('light-mode')) {
-                toggleBtn.textContent = "☀️ Light Mode";
+                toggleBtn.textContent = "Light Mode";
             } else {
-                toggleBtn.textContent = "🌙 Dark Mode";
+                toggleBtn.textContent = "Dark Mode";
             }
         });
 
@@ -173,11 +173,11 @@
         editBtn.addEventListener('click', () => {
             if (aboutText.contentEditable === "true") {
                 aboutText.contentEditable = "false";
-                editBtn.textContent = "✏️ Edit";
+                editBtn.textContent = "Edit";
             } else {
                 aboutText.contentEditable = "true";
                 aboutText.focus();
-                editBtn.textContent = "💾 Save";
+                editBtn.textContent = "Save";
             }
         });
     </script>
@@ -185,3 +185,4 @@
 </body>
 
 </html>
+
