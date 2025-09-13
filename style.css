@@ -275,6 +275,62 @@ form input, form textarea{
 
 }
 
+#theme-toggle {
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #1b93d8;
+    color: #fff;
+    transition: background 0.3s;
+}
+#theme-toggle:hover {
+    background: #0f6fa8;
+}
+
+body.light-mode {
+    background: #fff;
+    color: #000;
+}
+body.light-mode nav ul li a {
+    color: #000;
+}
+body.light-mode .sub-title {
+    color: #000;
+}
+body.light-mode .service-list div {
+    background: #f0f0f0;
+    color: #000;
+}
+body.light-mode form input,
+body.light-mode form textarea {
+    background: #e6e6e6;
+    color: #000;
+}
+
+#about-text[contenteditable="true"] {
+    border: 2px dashed #1b93d8;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(27, 147, 216, 0.1);
+}
+#edit-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #1b93d8;
+    color: #fff;
+    transition: background 0.3s;
+}
+#edit-btn:hover {
+    background: #0f6fa8;
+}
+
 
 
 
