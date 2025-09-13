@@ -7,16 +7,19 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background: #000;
+body {
+    background-color: #000; 
     color: #fff;
+
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 250px auto; 
 }
+
 #header{
     width: 30%;
     height: 40vh;
-    background-image: url('background.png');
-    background-size: contain;
-    background-position: right;
 }
 .container{
     padding: 10px 10%;
@@ -330,6 +333,7 @@ body.light-mode form textarea {
 #edit-btn:hover {
     background: #0f6fa8;
 }
+
 
 
 
