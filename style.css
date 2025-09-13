@@ -23,7 +23,7 @@ body{
 }
 nav{
     display: flex;
-    position: fixed;
+    position: sticky;
     align-items: center;
     margin-left: 650px;
     margin-top: 20px;
@@ -339,6 +339,7 @@ body.light-mode form textarea {
 #edit-btn:hover {
     background: #0f6fa8;
 }
+
 
 
 
