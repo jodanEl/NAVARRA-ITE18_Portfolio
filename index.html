@@ -7,10 +7,11 @@
     <title>Jd's Portfolio</title>
 </head>
 <body>
-    <video autoplay muted loop id="bg-video">
+    <div class="background-video" id="bg-video">
+          <video autoplay muted loop playsinline>
             <source src="background-dark.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-    </video>
+          </video>
+    </div>
     <div id="header">
         <div class="container">
             <nav>
@@ -156,21 +157,28 @@
 
 
     <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-        const bgVideo = document.getElementById('bg-video').querySelector('source');
-
+        const toggleBtn = document.getElementById('theme-toggle');
+        const videoElement = document.querySelector('#bg-video video');
+        const videoSource = videoElement.querySelector('source');
+        
+        function setVideoForTheme() {
+            if (document.body.classList.contains('light-theme')) {
+                videoSource.src = "background-light.mp4";
+                toggleBtn.textContent = "Toggle Theme";
+            } else {
+                videoSource.src = "background-dark.mp4";
+                toggleBtn.textContent = "Toggle Theme";
+            }
+            videoElement.load();
+            videoElement.play();
+        }
+    
+        setVideoForTheme();
+        
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('light-theme');
-
-            if (document.body.classList.contains('light-theme')) {
-                toggleBtn.textContent = "Toggle Theme"; 
-                bgVideo.src = "background-light.mp4"; 
-            } else {
-                toggleBtn.textContent = "Toggle Theme";
-                bgVideo.src = "background-dark.mp4";
-            }
-        bgVideo.parentElement.load();
-    });
+            setVideoForTheme();
+        });
 
 
         const editBtn = document.getElementById('edit-btn');
@@ -202,5 +210,6 @@
     </script>
 </body>
 </html>
+
 
 
