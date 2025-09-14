@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Jd's Portfolio</title>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+            <source src="images/background.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+    </video>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle">Light Mode</button>
+            </nav>
+            <div class="header-text">
+                <p>Student Programmer</p>
+                <h1>Jd Navarra</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pfp2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-text">A 3rd Year Computer Science student, developing and learning along the way.<br> 
+                        I am very passionate to embark onto a career within the field of Computer Science. 
+                        <br>Owning hundreds of class hours on CS and IT classes.</p>
+                    <button id="edit-btn">Edit</button>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Information Assurance<br>Encryption and Key Management</span></li>
+                            <li><span>Information Management<br>Device Control and Management</span></li>
+                            <li><span>Web Development<br>Project Management</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IT Intern<br> Assisting 50+ cybersecurity sustainment activities, including hardware and software change administration, account supervision, and user interface inspection Conducted network security</span></li>
+                            <li><span>Cyber Security intern<br> Administered daily security of databases and performed other duties as assigned by internship manager</span></li>
+                            <li><span>Cyber Security intern<br> Conducted 10+ incident response investigations monthly for classified incidents, and ensured all classified systems complied with cybersecurity regulations</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="section">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div class="service-item">
+                    <h2>Management</h2>
+                    <p>Assurance and management of information</p>
+                </div>
+                <div class="service-item">
+                    <h2>Engineering</h2>
+                    <p>Architecting and engineering trusted systems into secure systems</p>
+                </div>
+                <div class="service-item">
+                    <h2>Testing</h2>
+                    <p>Performing assessments and penetration testing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="section">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bulb.jpg">
+                    <div class="layer">
+                        <h3>Monitorization</h3>
+                        <p>Services including SIEM, IDS/IPS, Firewall, Web Application Firewalls, and Data Loss Prevention</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/diner.jpg">
+                    <div class="layer">
+                        <h3>Administration</h3>
+                        <p>Daily security of databases and performed other duties as assigned by internship manager</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/exit.jpg">
+                    <div class="layer">
+                        <h3>Investigation</h3>
+                        <p>Conducts multiple incident response investigations monthly for classified incidents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-list">
+            <a href="https://mail.google.com/mail/u/0/" target="_blank" class="contact-item">
+                <img src="images/google.png" alt="Google" class="contact-icon">
+                <div>
+                    <h2>Google</h2>
+                    <p>navarrajd@gmail.com</p>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/joel-daniel-navarra" target="_blank" class="contact-item">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                <div>
+                    <h2>LinkedIn</h2>
+                    <p>Joel Daniel Navarra</p>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/jedynvs" target="_blank" class="contact-item">
+                <img src="images/facebook.png" alt="Facebook" class="contact-icon">
+                <div>
+                    <h2>Facebook</h2>
+                    <p>Jd Navarra</p>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/jodan.el" target="_blank" class="contact-item">
+                <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+                <div>
+                    <h2>Instagram</h2>
+                    <p>@jodan.el</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+        const bgVideo = document.getElementById('bg-video').querySelector('source');
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+
+            if (document.body.classList.contains('light-theme')) {
+                toggleBtn.textContent = "Toggle Theme"; 
+                bgVideo.src = "images/background-light.mp4"; 
+            } else {
+                toggleBtn.textContent = "Toggle Theme";
+                bgVideo.src = "images/background-dark.mp4";
+            }
+        bgVideo.parentElement.load();
+    });
+
+
+        const editBtn = document.getElementById('edit-btn');
+        const aboutText = document.getElementById('about-text');
+        editBtn.addEventListener('click', () => {
+            if (aboutText.contentEditable === "true") {
+                aboutText.contentEditable = "false";
+                editBtn.textContent = "Edit";
+            } else {
+                aboutText.contentEditable = "true";
+                aboutText.focus();
+                editBtn.textContent = "Save";
+            }
+        });
+
+        const sections = document.querySelectorAll('.section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {    
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
